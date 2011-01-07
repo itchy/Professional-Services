@@ -1,0 +1,36 @@
+<style>
+	#navbar img {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+	#navbar h2{
+		padding-left: 10px;
+		font-size: 1.4em;
+		letter-spacing: -0.08em;
+	}
+	#navbar h5{
+		padding-bottom: 50px;
+		text-align: center;
+		font-size: 1.8em;
+		line-height: 100%;
+	}
+	#navbar a { padding-left: 10px; text-decoration: none; color: #000000; font-size: 1.4em; font-weight: bold }
+	#navbar a:link { padding-left: 10px; text-decoration: none; color: #000000; font-size: 1.4em; font-weight: bold }
+	#navbar a:hover { text-decoration: underline; color: #708E76;}
+	
+</style>
+
+<div id="navbar" class="grid_2 alpha">
+	<%= image_tag "logo_S.png" %>
+	<h2>Trevor Knowles, DMS</h2>
+	<h5><strong>Call Today<br />918-742-4500</strong></h5>
+	<%= link_to("Home", :controller => "home", :action => "index" )%><br />
+	<%= link_to("Meet the Doctor", :controller => "home", :action => "doctor" )%><br />
+	<%= link_to("Patient Services", :controller => "home", :action => "service" )%><br />
+	<%= link_to("Implants", {:controller => "home", :action => "service", :service => "implants"}, {:class => "dd"} )%><br />
+	<%= link_to("Dentures", {:controller => "home", :action => "service", :service => "dentures"}, {:class => "dd"} )%><br />
+	<%= link_to("Whitienng", {:controller => "home", :action => "service", :service => "whitening"}, {:class => "dd"} )%><br />
+	<%= link_to("General Care", {:controller => "home", :action => "service", :service => "general Care"}, {:class => "dd"} )%><br />
+	<%= link_to("Invisalign", {:controller => "home", :action => "service", :service => "invisalign"}, {:class => "dd"} )%><br />
+	<%= link_to("Finance Options", :controller => "home", :action => "finance" )%><br />
+</div>

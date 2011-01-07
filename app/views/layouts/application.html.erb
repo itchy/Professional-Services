@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Smile Tulsa</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+	<style>
+		#main_head, #navbar {
+			background: #F2EDD7;
+			border: 1px solid #111111;
+			height: 650px;
+		}
+		#main, #rightbar {
+			padding-top: 10px;
+			background: #FFF;
+			height: 410px;
+			overflow: auto;
+		}
+		.right {
+			padding-right: 10px;
+			padding-left: 10px;
+			float: right;
+		}
+		.dd {
+			margin-left: 1.5em;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container_12" >	
+		<%= render '/layouts/header' %>
+		<% if flash[:notice] -%>
+			<%= render :partial => '/layouts/flash', :locals => { :notice => flash[:notice] } %>
+		<% end -%>
+		<%= render '/layouts/navbar' %>
+		<div id="main_head" class="grid_10 omega">
+			<%= render '/layouts/banner' %>
+		  <div id="main" class="grid_8 omega">
+				<%= yield %>
+			</div>
+			<div id="rightbar" class="grid_2  alpha omega">	
+				<%= render '/layouts/rightbar' %>
+			</div>	
+		</div>
+		<%= render '/layouts/footer' %>
+	</div>
+
+</body>
+</html>
