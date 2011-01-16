@@ -8,6 +8,7 @@ ProServ::Application.routes.draw do
       get 'service'
       get 'finance'
       get 'contact'
+      post 'send_request'
     end
   end
 

@@ -8,8 +8,10 @@ class HomeController < ApplicationController
   end
 
   def service
-    @service = params[:service] || "Implants"
+    @service = params[:service] || "Dentures"
+    @service_partial= "/home/service/#{@service.split(/\s/)[0]}"
     @service.capitalize!
+    
   end
   
   def finance
@@ -17,7 +19,11 @@ class HomeController < ApplicationController
   end
   
   def contact
-    
+    @request = Request.new
+  end
+  
+  def send_request
+    @request = Request.new(params[:request])
   end
 
 end

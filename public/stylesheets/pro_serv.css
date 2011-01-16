@@ -183,3 +183,77 @@ input.text, input.title, textarea, select {
   margin: 0.5em 0;
   border: 1px solid #bbbbbb;
 }
+/*  Site Specific */
+div#header p {
+	color: #EEE;
+	padding-top: 20px;
+	text-align: center;
+}
+div#address {
+	color: #EEE;
+	margin-top: -15px;
+	margin-bottom: -20px;
+	text-align: right;
+	font-size: 1.3em;
+}
+#banner {
+	padding-top: 5px;
+	background: #F2EDD7;
+
+}
+
+#banner p {
+	color: #111111;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	margin-bottom: -30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3.5em;
+	font-family: "fantasy" ;
+	font-style: oblique;
+}	
+
+div .right {
+	float: right;
+}
+#main_head, #navbar {
+	background: #F2EDD7;
+	border: 1px solid #111111;
+	height: 1090px;
+}
+
+div#main, div#rightbar {
+	padding-top: 10px;
+	background: #FFF;
+	height: 850px;
+	overflow: none;
+}
+
+div#main p {
+	padding-left: 30px;
+	padding-right: 10px;
+	font-size: 1.3em;
+}
+
+.right {
+	padding-right: 10px;
+	padding-left: 10px;
+	float: right;
+}
+.dd {
+	margin-left: 1.5em;
+}
+h4 {
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 2.8em;
+}
+h3 {
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+	

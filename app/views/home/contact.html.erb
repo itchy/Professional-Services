@@ -1,17 +1,8 @@
-<style>
-	h4 {
-		padding-left: 20px;
-		font-weight: bold;
-		font-size: 3em;
-	}
-	h3 {
-		padding-left: 20px;
-		font-weight: bold;
-		font-size: 2em;
-	}
-	p {
-		padding-left: 30px;
-	}
-</style>
 <h4>Request an appointment</h4>
 <p>To request an appointment or ask a question, please fill out this form.</p>
+<%= form_for :request, @request, :url => { :controller => "home", :action => "send_request" }, :html => {:class => ""} do |f| %>
+  <%= f.text_field :first_name %>
+  <%= f.text_area :content, :size => "60x12" %>
+  <%= submit_tag "Create" %>
+<% end %>
+

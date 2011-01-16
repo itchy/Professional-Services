@@ -1,0 +1,17 @@
+class CreateRequests < ActiveRecord::Migration
+  def self.up
+    create_table :requests do |t|
+      t.string :first_name
+      t.string :last_name
+      t.string :email
+      t.string :phone
+      t.text :content
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :requests
+  end
+end
