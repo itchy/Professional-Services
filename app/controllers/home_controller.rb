@@ -18,6 +18,10 @@ class HomeController < ApplicationController
     
   end
   
+  def show
+    render(:action => 'index')
+  end
+  
   def contact
     @request = Request.new
   end
