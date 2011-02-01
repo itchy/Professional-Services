@@ -4,7 +4,6 @@
  * Requires jQuery 1.4.3 or later.
  * https://github.com/rails/jquery-ujs
  */
-
 (function($) {
 	// Triggers an event on an element and returns the event result
 	function fire(obj, name, data) {

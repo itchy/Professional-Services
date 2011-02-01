@@ -1,0 +1,11 @@
+--- 
+javascripts: 
+- base: 
+  - rails
+  - jquery.min
+  - jquery
+  - application
+stylesheets: 
+- base: 
+  - 960_grid
+  - pro_serv

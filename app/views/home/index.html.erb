@@ -2,7 +2,11 @@
 <h3>New Smile Family Dental Center</h3>
 	<div class="right">
 		<%= image_tag "building.png", :style => "border:1px solid black;"  %><br />
-		<img src="http://placehold.it/321x213&text=Map" style="border:1px solid black;">
+		<%= image_tag "http://maps.google.com/maps/api/staticmap?center=4550+East+41st+Street,Tulsa,OK+74105&markers=color:red|label:1|3150+East+41st+Street,Tulsa,OK+74105&zoom=13&size=321x213&sensor=false", 
+									:style => "border:1px solid black;" %><br />
+		
+		<div id="map_canvas" style="width:321px; height:213px;"></div>		
+					
 	</div>
 	<p>Your smile says a lot about you.  Dr. Trevor Knowles can give you the smile you've always wanted.</p>
 
