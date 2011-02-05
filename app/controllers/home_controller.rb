@@ -29,6 +29,7 @@ class HomeController < ApplicationController
   def send_request
     @request = Request.new(params[:request])
     if @request.valid?
+    
       
     else
       render(:action => :contact )
