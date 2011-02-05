@@ -10,7 +10,9 @@ $(document).ready(function() {
   //      {address: '2860 Duffton Loop, Tallahassee, FL 32303', icon: '../img/map-green.png', html: '2860 Duffton Loop'},
   //    ],
   //    hideByClick: true});
+  $('form.html5').html5form_custom();
   $('div#map_canvas').get_map();
+  
   // alert('Welcome!');    
   
   
