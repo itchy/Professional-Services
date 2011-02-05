@@ -24,6 +24,9 @@ class HomeController < ApplicationController
   
   def contact
     @request = Request.new
+    if params[:content]
+      @request.content = "Please send me information about a FREE first visit including exam and x-rays."
+    end  
   end
   
   def send_request

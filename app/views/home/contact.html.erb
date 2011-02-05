@@ -1,22 +1,23 @@
 <h4>Request an appointment</h4>
 <p>To request an appointment or ask a question, please fill out this form.
-<br /><small>* Indicates required fields</small>.</p>
-<div id="request_form" class="grid_4 prefix_1">
+<br /><small>* Indicates required fields ** Indicates one or the other is required</small>.</p>
+<div id="request_form" class="grid_6 prefix_1">
 	<%= form_for @request, :url => { :controller => "home", :action => "send_request" }, :html => {:class => "html5"} do |f| %>
 	  
 		<% if @request.errors.any? -%>
-			<div class="grid_4" style= "text-align: center;" >
+			<div style= "text-align: center; color: red; clear: both;" >
 		    <% @request.errors.full_messages.each do |msg| -%>
 		        <li><%= msg %></li>
 		    <% end -%>
+				<br />
 			</div>
 		<% end -%>
 	
-		<%= f.text_field :first_name, :placeholder => "First Name *" %><br />
-		<%= f.text_field :last_name, :placeholder => "Last Name *" %><br />
-		<%= f.text_field :email, :placeholder => "email" %><br />
-		<%= f.text_field :phone, :placeholder => "phone" %><br />
-	  <%= f.text_area :content, :size => "60x12", :placeholder => "Content *" %><br />
+		<%= f.text_field :first_name, :size => "25", :placeholder => "* First Name" %>
+		<%= f.text_field :last_name, :size => "25", :placeholder => "* Last Name" %>
+		<%= f.text_field :email, :size => "25", :placeholder => "** Email" %>
+		<%= f.text_field :phone, :size => "25", :placeholder => "** Phone" %>
+	  <%= f.text_area :content, :size => "60x12", :placeholder => "* Content" %><br />
 	  <%= submit_tag "Submit" %>
 	<% end %>
 </div>
