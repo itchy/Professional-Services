@@ -188,6 +188,7 @@ input, textarea, select {
 }
 
 input[type="submit"] {
+  padding: 6px 20px 6px 20px;
   background: #ddd;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -195,6 +196,7 @@ input[type="submit"] {
 
 
 input[type="submit"]:hover {
+  border: 1px solid #999;
   background: #bbb;
 }
 
