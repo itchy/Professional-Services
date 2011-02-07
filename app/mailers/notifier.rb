@@ -4,13 +4,13 @@ class Notifier < ActionMailer::Base
   def request_contact(request)
     from "system@newsmile.com"
     subject "Newsmile.com Request Contact"    
-    recipients "7.scott.j@gmail.com"
+    recipients "erin@newsmile.com"
     
-    text = "You recieved a request!\n"
+    text = "You recieved a request!\n\n"
     text << "First: #{request.first_name}\n"
     text << "Last: #{request.last_name}\n"
     text << "Email: #{request.email}\n"
-    text << "Phone: #{request.phone}\n"
+    text << "Phone: #{request.phone}\n\n"
     text << request.content
     
     body text
