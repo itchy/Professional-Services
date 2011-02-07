@@ -1,9 +1,10 @@
 class Notifier < ActionMailer::Base
-  default :from => "from@example.com"
+  default :from => "scott.s.johnson@att.net"
   
   def request_contact(request)
-    subject "Newsmile.com Request Contact"
-    recipients "scott.s.johnson@att.net"
+    from "scott.s.johnson@att.net"
+    subject "Newsmile.com Request Contact"    
+    recipients "7.scott.j@gmail.com"
     
     text = "You recieved a request!\n"
     text << "First: #{request.first_name}\n"

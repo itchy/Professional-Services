@@ -33,7 +33,6 @@ class HomeController < ApplicationController
     request = Request.new(params[:request])
     if request.valid?
       tmail = Notifier.deliver_request_contact(request)
-      tmail.inspect
       # render(:text => tmail)
     else
       render(:action => :contact )
