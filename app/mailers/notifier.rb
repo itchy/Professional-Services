@@ -1,8 +1,8 @@
 class Notifier < ActionMailer::Base
-  default :from => "scott.s.johnson@att.net"
+  # default :from => "scott.s.johnson@att.net"
   
   def request_contact(request)
-    from "scott.s.johnson@att.net"
+    from "system@newsmile.com"
     subject "Newsmile.com Request Contact"    
     recipients "7.scott.j@gmail.com"
     
