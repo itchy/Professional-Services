@@ -5,7 +5,7 @@
 $.fn.extend({
 
  get_map: function() { 
-   alert('Welcome!');    
+   // alert('Welcome!');    
   var $this = $(this);
   var center_latlng = new google.maps.LatLng(36.104312, -95.9260086);
   var office_latlng = new google.maps.LatLng(36.103771, -95.941394);
