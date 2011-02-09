@@ -229,15 +229,17 @@ div#address {
 
 }
 
-#banner p {
+#banner li {
+  list-style: none;
 	color: #111111;
-	padding-top: 0px;
+	padding-top: 20px;
 	padding-bottom: 0px;
 	padding-left: 30px;
 	margin-bottom: -30px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 3.5em;
+	font-size: 6.5em;
+	line-height: 1.0em;
 	font-family: "fantasy" ;
 	font-style: oblique;
 }	
