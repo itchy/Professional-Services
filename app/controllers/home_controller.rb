@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  caches_page :index, :doctor, :service, :finance, :show 
+
   def index
     
   end
