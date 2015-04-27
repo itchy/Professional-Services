@@ -34,8 +34,7 @@ class HomeController < ApplicationController
   def send_request
     @request = Request.new(params[:request])
     if @request.valid?
-      tmail = Notifier.deliver_request_contact(@request)
-      # render(:text => tmail)
+      @request.post_email
     else
       render(:action => :contact )
     end    
