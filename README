@@ -1,3 +1,3 @@
-rails server thin -d -p80
+rails server thin -d -p80 -e production
 
 kill -9 $(cat tmp/pids/server.pid)
